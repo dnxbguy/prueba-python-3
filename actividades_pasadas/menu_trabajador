@@ -20,7 +20,7 @@ def imprimir_planilla():
                 print("Cargo no encontrado.")
                 return
 
-            with open(f'planilla_sueldos_{cargo}.txt', 'w', encoding='utf-8') as archivo:
+            with open(f'planilla_sueldos_{cargo}.txt', 'w') as archivo:
                 archivo.write('Nombre,Cargo,Sueldo Bruto,Desc. Salud,Desc. AFP,Líquido a Pagar\n')
                 for trabajador in trabajadores:
                     if trabajador['cargo'] == cargo:
